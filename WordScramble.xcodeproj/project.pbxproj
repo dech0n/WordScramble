@@ -11,6 +11,7 @@
 		B9D90F852BEADFF70063A324 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D90F842BEADFF70063A324 /* ContentView.swift */; };
 		B9D90F872BEADFF80063A324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D90F862BEADFF80063A324 /* Assets.xcassets */; };
 		B9D90F8A2BEADFF80063A324 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D90F892BEADFF80063A324 /* Preview Assets.xcassets */; };
+		B9D90F912BEC130F0063A324 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = B9D90F902BEC130F0063A324 /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		B9D90F842BEADFF70063A324 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B9D90F862BEADFF80063A324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9D90F892BEADFF80063A324 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B9D90F902BEC130F0063A324 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 				B9D90F822BEADFF70063A324 /* WordScrambleApp.swift */,
 				B9D90F842BEADFF70063A324 /* ContentView.swift */,
 				B9D90F862BEADFF80063A324 /* Assets.xcassets */,
+				B9D90F902BEC130F0063A324 /* start.txt */,
 				B9D90F882BEADFF80063A324 /* Preview Content */,
 			);
 			path = WordScramble;
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9D90F8A2BEADFF80063A324 /* Preview Assets.xcassets in Resources */,
+				B9D90F912BEC130F0063A324 /* start.txt in Resources */,
 				B9D90F872BEADFF80063A324 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
