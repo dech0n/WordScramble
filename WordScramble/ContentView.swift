@@ -16,12 +16,17 @@ struct ContentView: View {
     @State private var errorMessage = ""
     @State private var showingError = false
     
+    @State private var score = 0
+    
     var body: some View {
         NavigationStack {
             List {
                 Section {
                     TextField("Enter your word", text: $newWord)
                         .textInputAutocapitalization(.never)
+                    Text("Score: \(score)")
+                        .font(.title3)
+                    
                 }
                 
                 Section {
@@ -83,6 +88,7 @@ struct ContentView: View {
             usedWords.insert(answer, at: 0)
         }
         
+        addScore(word: answer)
         newWord = ""
     }
     
@@ -91,11 +97,17 @@ struct ContentView: View {
             if let startWords = try? String(contentsOf: startWordsURL) {
                 let allWords = startWords.components(separatedBy: "\n")
                 rootWord = allWords.randomElement() ?? "silkworm"
+                score = 0
+                usedWords.removeAll()
                 return
             }
         }
         
         fatalError("Could not load start.txt from bundle.")
+    }
+    
+    func addScore(word: String) {
+        score += word.count
     }
     
     func isOriginal(word: String) -> Bool {
