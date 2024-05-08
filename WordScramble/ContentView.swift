@@ -36,6 +36,10 @@ struct ContentView: View {
             .navigationTitle(rootWord)
             .onSubmit(addNewWord)
             .onAppear(perform: startGame)
+            .toolbar {
+                Button("New Word", action: startGame)
+                    .font(.title2)
+            }
             .alert(errorTitle, isPresented: $showingError) {
                 Button("OK") { }
             } message: {
